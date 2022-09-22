@@ -14,6 +14,6 @@ export class AtendenteService {
     let form_data = new FormData();
     form_data.append('dados',dados);
 
-    this.http.post('http://localhost:8080/atendente',form_data);//endpoint
+    return this.http.post('http://localhost:8080/atendente',form_data);//endpoint
   }
 }

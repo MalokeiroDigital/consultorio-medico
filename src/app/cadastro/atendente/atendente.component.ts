@@ -22,6 +22,7 @@ export class AtendenteComponent implements OnInit {
   }
 
   salvar(){
-    this.atendente_service.salvar(this.dados);
+    this.atendente_service.salvar(this.dados)
+    .subscribe();//faz o tratamento da requisição toda requisição é uma promise{metodo assíncrono}
   }
 }
