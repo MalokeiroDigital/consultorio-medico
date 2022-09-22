@@ -1,0 +1,8 @@
+{
+    "/atendente/*":{
+        "target": "http://localhost:8080/atendente",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}
