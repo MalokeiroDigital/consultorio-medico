@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AtendenteComponent implements OnInit {
 
+  //variavel de sistema 
+  public _dados: any = {
+    id:0,
+    nome: ''
+  };
+   
   constructor() { }
 
   ngOnInit(): void {
