@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AtendenteService } from 'src/app/service/atendente.service';
 
 @Component({
   selector: 'app-atendente',
@@ -13,12 +14,14 @@ export class AtendenteComponent implements OnInit {
     nome: ''
   };
   
-  constructor() { }
+  constructor(
+    public atendente_service:AtendenteService
+  ) { }
 
   ngOnInit(): void {
   }
 
   salvar(){
-    console.log(this.dados.nome);
+    this.atendente_service.salvar(this.dados);
   }
 }
