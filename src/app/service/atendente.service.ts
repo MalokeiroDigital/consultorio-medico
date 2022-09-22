@@ -14,6 +14,6 @@ export class AtendenteService {
     let form_data = new FormData();
     form_data.append('dados',dados);
 
-    return this.http.post('',form_data);//endpoint
+    return this.http.post('/atendente',form_data);//endpoint
   }
 }
