@@ -9,8 +9,12 @@
             id="nome" 
             name="nome" 
             aria-describedby="Nome"
-            [(NgModel)]="dados.nome"
+            [(ngModel)]="dados.nome"
         >
     </div>
-    <button type="button" class="btn btn-primary">Salvar</button>
+    <button 
+        type="button" 
+        class="btn btn-primary"
+        (click)="salvar()"
+    >Salvar</button>
 </form>

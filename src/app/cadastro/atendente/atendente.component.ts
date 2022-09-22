@@ -8,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class AtendenteComponent implements OnInit {
 
   //variavel de sistema 
-  public _dados: any = {
+  public dados: any = {
     id:0,
     nome: ''
   };
-   
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  salvar(){
+    console.log(this.dados.nome);
+  }
 }
